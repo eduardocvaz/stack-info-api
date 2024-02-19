@@ -4,22 +4,261 @@
       "id": 1,
       "title": "Angular",
       "tag": "angular",
-      "image-png": "https://angular.io/assets/images/logos/angular/angular.png",
+      "image-png": "https://www.eduardovaz.dev/stack-info-api/images/png/angular.png",
       "image-svg": "https://www.eduardovaz.dev/stack-info-api/images/svg/angular.svg"
     },
     {
       "id": 2,
       "title": "React",
       "tag": "react",
-      "image-png": "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg",
-      "image-svg": "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+      "image-png": "https://www.eduardovaz.dev/stack-info-api/images/png/react.png",
+      "image-svg": "https://www.eduardovaz.dev/stack-info-api/images/svg/react.svg"
+    },
+
+    {
+      "id": 4,
+      "title": "Kotlin",
+      "tag": "kotlin",
+      "image-png": "https://www.eduardovaz.dev/stack-info-api/images/png/kotlin.png",
+      "image-svg": "https://www.eduardovaz.dev/stack-info-api/images/svg/kotlin.svg"
     },
     {
-      "id": 3,
-      "title": "Vue",
-      "tag": "vue",
-      "image-png": "https://vuejs.org/images/logo.png",
-      "image-svg": "https://vuejs.org/images/logo.png"
+      "id": 5,
+      "title": "JAVA",
+      "tag": "java",
+      "image-png": "https://www.eduardovaz.dev/stack-info-api/images/png/java.png",
+      "image-svg": "https://www.eduardovaz.dev/stack-info-api/images/svg/java.svg"
+    },
+    {
+      "id": 6,
+      "title": "Python",
+      "tag": "python",
+      "image-png": "https://www.eduardovaz.dev/stack-info-api/images/png/python.png",
+      "image-svg": "https://www.eduardovaz.dev/stack-info-api/images/svg/python.svg"
+    },
+    {
+      "id": 7,
+      "title": "C#",
+      "tag": "c-sharp",
+      "image-png": "https://www.eduardovaz.dev/stack-info-api/images/png/c-sharp.png",
+      "image-svg": "https://www.eduardovaz.dev/stack-info-api/images/svg/c-sharp.svg"
+    },
+    {
+      "id": 8,
+      "title": "Dart",
+      "tag": "dart",
+      "image-png": "https://www.eduardovaz.dev/stack-info-api/images/png/dart.png",
+      "image-svg": "https://www.eduardovaz.dev/stack-info-api/images/svg/dart.svg"
+    },
+    {
+      "id": 9,
+      "title": "Ruby",
+      "tag": "ruby",
+      "image-png": "https://www.eduardovaz.dev/stack-info-api/images/png/ruby.png",
+      "image-svg": "https://www.eduardovaz.dev/stack-info-api/images/svg/ruby.svg"
+    },
+    {
+      "id": 10,
+      "title": "Typescript",
+      "tag": "typescript",
+      "image-png": "https://www.eduardovaz.dev/stack-info-api/images/png/typescript.png",
+      "image-svg": "https://www.eduardovaz.dev/stack-info-api/images/svg/typescript.svg"
+    },
+    {
+      "id": 11,
+      "title": "JavaScript",
+      "tag": "javascript",
+      "image-png": "https://www.eduardovaz.dev/stack-info-api/images/png/javascript.png",
+      "image-svg": "https://www.eduardovaz.dev/stack-info-api/images/svg/javascript.svg"
+    },
+    {
+      "id": 13,
+      "title": "SQL",
+      "tag": "sql",
+      "image-png": "https://www.eduardovaz.dev/stack-info-api/images/png/sql.png",
+      "image-svg": "https://www.eduardovaz.dev/stack-info-api/images/svg/sql.svg"
+    },
+    {
+      "id": 16,
+      "title": "Vue.js",
+      "tag": "vue-js",
+      "image-png": "https://www.eduardovaz.dev/stack-info-api/images/png/vue-js.png",
+      "image-svg": "https://www.eduardovaz.dev/stack-info-api/images/svg/vue-js.svg"
+    },
+    {
+      "id": 17,
+      "title": "Node.js",
+      "tag": "node-js",
+      "image-png": "https://www.eduardovaz.dev/stack-info-api/images/png/node-js.png",
+      "image-svg": "https://www.eduardovaz.dev/stack-info-api/images/svg/node-js.svg"
+    },
+    {
+      "id": 18,
+      "title": "Spring Framework",
+      "tag": "spring",
+      "image-png": "https://www.eduardovaz.dev/stack-info-api/images/png/spring.png",
+      "image-svg": "https://www.eduardovaz.dev/stack-info-api/images/svg/spring.svg"
+    },
+    {
+      "id": 19,
+      "title": "Ruby on Rails",
+      "tag": "rails",
+      "image-png": "https://www.eduardovaz.dev/stack-info-api/images/png/rails.png",
+      "image-svg": "https://www.eduardovaz.dev/stack-info-api/images/svg/rails.svg"
+    },
+    {
+      "id": 20,
+      "title": "Flutter",
+      "tag": "flutter",
+      "image-png": "https://www.eduardovaz.dev/stack-info-api/images/png/flutter.png",
+      "image-svg": "https://www.eduardovaz.dev/stack-info-api/images/svg/flutter.svg"
+    },
+    {
+      "id": 21,
+      "title": "Android Studio",
+      "tag": "android-studio",
+      "image-png": "https://www.eduardovaz.dev/stack-info-api/images/png/android-studio.png",
+      "image-svg": "https://www.eduardovaz.dev/stack-info-api/images/svg/android-studio.svg"
+    },
+    {
+      "id": 22,
+      "title": "Django",
+      "tag": "django",
+      "image-png": "https://www.eduardovaz.dev/stack-info-api/images/png/django.png",
+      "image-svg": "https://www.eduardovaz.dev/stack-info-api/images/svg/django.svg"
+    },
+    {
+      "id": 28,
+      "title": "HTML5",
+      "tag": "html5",
+      "image-png": "https://www.eduardovaz.dev/stack-info-api/images/png/html5.png",
+      "image-svg": "https://www.eduardovaz.dev/stack-info-api/images/svg/html5.svg"
+    },
+    {
+      "id": 29,
+      "title": "CSS3",
+      "tag": "css3",
+      "image-png": "https://www.eduardovaz.dev/stack-info-api/images/png/css3.png",
+      "image-svg": "https://www.eduardovaz.dev/stack-info-api/images/svg/css3.svg"
+    },
+    {
+      "id": 31,
+      "title": "HTTP",
+      "tag": "http",
+      "image-png": "https://www.eduardovaz.dev/stack-info-api/images/png/http.png",
+      "image-svg": "https://www.eduardovaz.dev/stack-info-api/images/svg/http.svg"
+    },
+    {
+      "id": 32,
+      "title": "REST",
+      "tag": "rest",
+      "image-png": "https://www.eduardovaz.dev/stack-info-api/images/png/rest.png",
+      "image-svg": "https://www.eduardovaz.dev/stack-info-api/images/svg/rest.svg"
+    },
+    {
+      "id": 33,
+      "title": "GraphQL",
+      "tag": "graphql",
+      "image-png": "https://www.eduardovaz.dev/stack-info-api/images/png/graphql.png",
+      "image-svg": "https://www.eduardovaz.dev/stack-info-api/images/svg/graphql.svg"
+    },
+    {
+      "id": 34,
+      "title": "JSON",
+      "tag": "json",
+      "image-png": "https://www.eduardovaz.dev/stack-info-api/images/png/json.png",
+      "image-svg": "https://www.eduardovaz.dev/stack-info-api/images/svg/json.svg"
+    },
+    {
+      "id": 35,
+      "title": "XML",
+      "tag": "xml",
+      "image-png": "https://www.eduardovaz.dev/stack-info-api/images/png/xml.png",
+      "image-svg": "https://www.eduardovaz.dev/stack-info-api/images/svg/xml.svg"
+    },
+    {
+      "id": 37,
+      "title": "MySQL",
+      "tag": "mysql",
+      "image-png": "https://www.eduardovaz.dev/stack-info-api/images/png/mysql.png",
+      "image-svg": "https://www.eduardovaz.dev/stack-info-api/images/svg/mysql.svg"
+    },
+    {
+      "id": 38,
+      "title": "PostgreSQL",
+      "tag": "postgresql",
+      "image-png": "https://www.eduardovaz.dev/stack-info-api/images/png/postgresql.png",
+      "image-svg": "https://www.eduardovaz.dev/stack-info-api/images/svg/postgresql.svg"
+    },
+    {
+      "id": 39,
+      "title": "MongoDB",
+      "tag": "mongodb",
+      "image-png": "https://www.eduardovaz.dev/stack-info-api/images/png/mongodb.png",
+      "image-svg": "https://www.eduardovaz.dev/stack-info-api/images/svg/mongodb.svg"
+    },
+    {
+      "id": 41,
+      "title": "SQLite",
+      "tag": "sqlite",
+      "image-png": "https://www.eduardovaz.dev/stack-info-api/images/png/sqlite.png",
+      "image-svg": "https://www.eduardovaz.dev/stack-info-api/images/svg/sqlite.svg"
+    },
+    {
+      "id": 42,
+      "title": "SQL Server",
+      "tag": "sql-server",
+      "image-png": "https://www.eduardovaz.dev/stack-info-api/images/png/sql-server.png",
+      "image-svg": "https://www.eduardovaz.dev/stack-info-api/images/svg/sql-server.svg"
+    },
+    {
+      "id": 44,
+      "title": "Firebase Database",
+      "tag": "firebase-database",
+      "image-png": "https://www.eduardovaz.dev/stack-info-api/images/png/firebase-database.png",
+      "image-svg": "https://www.eduardovaz.dev/stack-info-api/images/svg/firebase-database.svg"
+    },
+    {
+      "id": 45,
+      "title": "Docker",
+      "tag": "docker",
+      "image-png": "https://www.eduardovaz.dev/stack-info-api/images/png/docker.png",
+      "image-svg": "https://www.eduardovaz.dev/stack-info-api/images/svg/docker.svg"
+    },
+    {
+      "id": 46,
+      "title": "Kubernetes",
+      "tag": "kubernetes",
+      "image-png": "https://www.eduardovaz.dev/stack-info-api/images/png/kubernetes.png",
+      "image-svg": "https://www.eduardovaz.dev/stack-info-api/images/svg/kubernetes.svg"
+    },
+    {
+      "id": 48,
+      "title": "Git",
+      "tag": "git",
+      "image-png": "https://www.eduardovaz.dev/stack-info-api/images/png/git.png",
+      "image-svg": "https://www.eduardovaz.dev/stack-info-api/images/svg/git.svg"
+    },
+    {
+      "id": 49,
+      "title": "GitLab",
+      "tag": "gitlab",
+      "image-png": "https://www.eduardovaz.dev/stack-info-api/images/png/gitlab.png",
+      "image-svg": "https://www.eduardovaz.dev/stack-info-api/images/svg/gitlab.svg"
+    },
+    {
+      "id": 50,
+      "title": "GitHub",
+      "tag": "github",
+      "image-png": "https://www.eduardovaz.dev/stack-info-api/images/png/github.png",
+      "image-svg": "https://www.eduardovaz.dev/stack-info-api/images/svg/github.svg"
+    },
+    {
+      "id": 51,
+      "title": "Amazon Web Services",
+      "tag": "aws",
+      "image-png": "https://www.eduardovaz.dev/stack-info-api/images/png/aws.png",
+      "image-svg": "https://www.eduardovaz.dev/stack-info-api/images/svg/aws.svg"
     }
   ]
 }
