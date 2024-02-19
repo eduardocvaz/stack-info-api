@@ -1,0 +1,25 @@
+{
+  "stacks": [
+    {
+      "id": 1,
+      "title": "Angular",
+      "tag": "angular",
+      "image-png": "https://angular.io/assets/images/logos/angular/angular.png",
+      "image-svg": "https://www.eduardovaz.dev/stack-info-api/images/svg/angular.svg"
+    },
+    {
+      "id": 2,
+      "title": "React",
+      "tag": "react",
+      "image-png": "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg",
+      "image-svg": "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+    },
+    {
+      "id": 3,
+      "title": "Vue",
+      "tag": "vue",
+      "image-png": "https://vuejs.org/images/logo.png",
+      "image-svg": "https://vuejs.org/images/logo.png"
+    }
+  ]
+}
