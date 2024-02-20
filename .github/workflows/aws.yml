@@ -34,22 +34,39 @@ jobs:
         
     - name: Install JSON Server
       run: npm install -g json-server
+
+    - name: AWS SSM Send-Command
+      uses: peterkimzz/aws-ssm-send-command@master
+      id: ssm
+      with:
+        aws-region: ${{ env.AWS_REGION }}
+        aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        instance-ids: i-035c3d9c4db2376ef
+
+        working-directory: /home/ec2-user
+        command: ls -al
+        comment: Hello world!
+
+    # Catch SSM outputs
+    - name: Get the outputs
+      run: echo "The Command id is ${{ steps.ssm.outputs.command-id }}"
       
-    - name: Install AWS CLI
-      run: |
-        sudo apt-get update
-        sudo apt-get install -y awscli
+    # - name: Install AWS CLI
+    #   run: |
+    #     sudo apt-get update
+    #     sudo apt-get install -y awscli
 
-    - name: Deploy to EC2
-      run: |
-        aws configure set aws_access_key_id ${{ secrets.AWS_ACCESS_KEY_ID }}
-        aws configure set aws_secret_access_key ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-        aws configure set region ${{ env.AWS_REGION }}
+    # - name: Deploy to EC2
+    #   run: |
+    #     aws configure set aws_access_key_id ${{ secrets.AWS_ACCESS_KEY_ID }}
+    #     aws configure set aws_secret_access_key ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+    #     aws configure set region ${{ env.AWS_REGION }}
 
-        aws s3 cp ./db.json s3://githubactions-blogback/db.json
-        aws ssm send-command --document-name "AWS-RunShellScript" --targets "Key=instanceids,Values=i-035c3d9c4db2376ef" --parameters "commands=mkdir testando"
-        # aws ssm send-command --document-name "AWS-RunShellScript" --targets "Key=instanceids,Values=i-035c3d9c4db2376ef" --parameters "commands=aws s3 cp s3://githubactions-blogback/db.json ./stack-info/db.json"
-        # aws ssm send-command --document-name "AWS-RunShellScript" --targets "Key=instanceids,Values=i-035c3d9c4db2376ef" --parameters "commands=json-server --watch db.json --port 3000"
+    #     aws s3 cp ./db.json s3://githubactions-blogback/db.json
+    #     aws ssm send-command --document-name "AWS-RunShellScript" --targets "Key=instanceids,Values=i-035c3d9c4db2376ef" --parameters "commands=mkdir testando"
+    #     # aws ssm send-command --document-name "AWS-RunShellScript" --targets "Key=instanceids,Values=i-035c3d9c4db2376ef" --parameters "commands=aws s3 cp s3://githubactions-blogback/db.json ./stack-info/db.json"
+    #     # aws ssm send-command --document-name "AWS-RunShellScript" --targets "Key=instanceids,Values=i-035c3d9c4db2376ef" --parameters "commands=json-server --watch db.json --port 3000"
 
           
 
