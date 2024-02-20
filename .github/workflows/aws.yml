@@ -6,13 +6,6 @@ on:
 
 env:
   AWS_REGION: sa-east-1                   # set this to your preferred AWS region, e.g. us-west-1
-  # ECR_REPOSITORY: MY_ECR_REPOSITORY           # set this to your Amazon ECR repository name
-  # ECS_SERVICE: MY_ECS_SERVICE                 # set this to your Amazon ECS service name
-  # ECS_CLUSTER: MY_ECS_CLUSTER                 # set this to your Amazon ECS cluster name
-  # ECS_TASK_DEFINITION: MY_ECS_TASK_DEFINITION # set this to the path to your Amazon ECS task definition
-  #                                              # file, e.g. .aws/task-definition.json
-  # CONTAINER_NAME: MY_CONTAINER_NAME           # set this to the name of the container in the
-  #                                              # containerDefinitions section of your task definition
 
 permissions:
   contents: read
@@ -27,31 +20,6 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v3
       
-    # - name: Setup Node.js environment
-    #   uses: actions/setup-node@v4.0.2
-    #   with:
-    #     node-version: '18.18.2'
-        
-    # - name: Install JSON Server
-    #   run: npm install -g json-server
-
-    # - name: AWS SSM Send-Command
-    #   uses: peterkimzz/aws-ssm-send-command@master
-    #   id: ssm
-    #   with:
-    #     aws-region: ${{ env.AWS_REGION }}
-    #     aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-    #     aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-    #     instance-ids: i-035c3d9c4db2376ef
-
-    #     working-directory: /home/ec2-user
-    #     command: mkdir testando
-    #     comment: Hello world!
-
-    # # Catch SSM outputs
-    # - name: Get the outputs
-    #   run: echo "The Command id is ${{ steps.ssm.outputs.command-id }}"
-      
     - name: Install AWS CLI
       run: |
         sudo apt-get update
@@ -64,9 +32,4 @@ jobs:
         aws configure set region ${{ env.AWS_REGION }}
 
         aws s3 cp ./db.json s3://githubactions-blogback/db.json
-        # aws ssm send-command --document-name "AWS-RunShellScript" --targets "Key=instanceids,Values=i-035c3d9c4db2376ef" --parameters "commands='mkdir testando',workingDirectory=/home/ec2-user"
-        aws ssm send-command --document-name "AWS-RunShellScript" --targets "Key=instanceids,Values=i-035c3d9c4db2376ef" --parameters "commands='aws s3 cp s3://githubactions-blogback/db.json ./stack-info/db.json',workingDirectory=/home/ec2-user"
-        # aws ssm send-command --document-name "AWS-RunShellScript" --targets "Key=instanceids,Values=i-035c3d9c4db2376ef" --parameters "commands=json-server --watch db.json --port 3000"
-
-          
-
+        aws ssm send-command --document-name "AWS-RunShellScript" --targets "Key=instanceids,Values=i-035c3d9c4db2376ef" --parameters "commands='/bin/sh deploy.sh',workingDirectory=/home/ec2-user/stack-info"
