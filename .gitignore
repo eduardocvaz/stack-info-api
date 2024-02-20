@@ -1,0 +1,20 @@
+# Arquivos de log do JSON Server
+json-server.log
+
+# Arquivos de banco de dados JSON usados pelo JSON Server
+db.json
+
+# Módulos Node.js
+node_modules/
+
+# Dependências instaladas pelo npm
+npm-debug.log
+
+# Arquivos gerados pelo editor de texto
+.vscode/
+
+# Arquivos de ambiente
+.env
+
+# Arquivos de configuração do IntelliJ IDEA
+.idea/
