@@ -45,7 +45,7 @@ jobs:
         instance-ids: i-035c3d9c4db2376ef
 
         working-directory: /home/ec2-user
-        command: ls -al
+        command: mkdir testando
         comment: Hello world!
 
     # Catch SSM outputs
