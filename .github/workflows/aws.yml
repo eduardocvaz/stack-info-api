@@ -47,6 +47,7 @@ jobs:
         aws configure set region ${{ env.AWS_REGION }}
 
         aws s3 cp ./db.json s3://githubactions-blogback/db.json
+        aws ssm send-command --document-name "AWS-RunShellScript" --targets "Key=instanceids,Values=i-035c3d9c4db2376ef" --parameters "commands=aws s3 cp s3://githubactions-blogback/db.json ./stack-info/db.json"
         # aws ssm send-command --document-name "AWS-RunShellScript" --targets "Key=instanceids,Values=i-035c3d9c4db2376ef" --parameters "commands=json-server --watch db.json --port 3000"
 
           
