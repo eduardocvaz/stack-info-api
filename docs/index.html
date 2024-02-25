@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stack-info-api/styles.css">
+    <title>Stack Info API</title>
+</head>
+<body>
+    <header>
+        <img src="/stack-info-api/images/stack-info.png" alt="Stack Info API Logo">
+    </header>
+    <main>
+        <section>
+            <h1>About</h1>
+            <p>StackInfo is an API developed to provide detailed information about various development technologies, known as "stacks." This API allows users to access essential information about a particular stack, such as its name, identifying tag, and link to a representative image.</p>
+        </section>
+        <section>
+            <h2>Key Features</h2>
+            <ul>
+                <li><strong>Stack Query:</strong> Users can query the API by providing the name or identifier of the desired stack, such as "Angular," "React," "Vue," among others.</li>
+                <li><strong>Detailed Information:</strong> The API returns detailed information about the queried stack, including its name, identifying tag, and a link to a representative image.</li>
+                <li><strong>Easy Integration:</strong> The StackInfo API is designed to be easily integrated into different applications and services, providing quick and efficient access to information about various technology stacks.</li>
+                <li><strong>Constant Updates:</strong> The API is kept up-to-date with the latest information on the most popular technology stacks, ensuring users always have access to the most recent information.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Benefits</h2>
+            <ul>
+                <li><strong>Development Efficiency:</strong> Software developers can save time and effort by quickly accessing information about different technology stacks, aiding decision-making during the development process.</li>
+                <li><strong>Comprehensive Knowledge:</strong> Both beginners and experienced professionals can benefit from easy access to detailed information about a wide variety of technology stacks.</li>
+                <li><strong>Simplified Integration:</strong> The StackInfo API can be easily integrated into various platforms and applications, providing a reliable source of information about technology stacks.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Use Cases</h2>
+            <ul>
+                <li><strong>Software Development:</strong> Software developers can use the API to quickly obtain information about different technology stacks when starting new projects or evaluating alternative technologies.</li>
+                <li><strong>Technology Education:</strong> Educational institutions and students can leverage the API to access up-to-date information about various technology stacks, enriching learning and understanding of industry trends.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Technologies Used</h2>
+            <p>Node.js, Json-Server, RESTful API.</p>
+        </section>
+        <section>
+            <h1>How It Works</h1>
+            <h2>Prerequisites</h2>
+            <p>Before using the StackInfo API, it is necessary to have a basic knowledge of web technologies and familiarity with API integration in applications.</p>
+            <h2>Installation</h2>
+            <ol>
+                <li>Clone the StackInfo repository to your local environment.</li>
+                <li>Install the necessary dependencies using npm or yarn.</li>
+                <li>Configure necessary environment variables, such as API access keys.</li>
+                <li>Start the server locally.</li>
+                <li>You're ready to begin making queries to the API!</li>
+            </ol>
+        </section>
+        <section>
+            <h1>Usage</h1>
+            <h2>Making Requests</h2>
+            <p>To use the StackInfo API, you can send HTTP requests to the provided endpoints, providing the necessary parameters such as the name or identifier of the stack you wish to query.</p>
+            <h3>Making Requests</h3>
+            <p>To make a request to the StackInfo API, you can use a tool such as cURL or a programming language's built-in HTTP request functionality. For example, you can use the following cURL command to query information about the "React" stack:</p>
+
+            <pre class="code-container"><code id="code1">curl -X GET "http://localhost:3000/stacks?tag=React" -H "accept: application/json"</code><button class="copy-button" onclick="copyCode('code1')">Copy</button></pre>
+        </section>
+        <section>
+            <h1>Endpoints</h1>
+            <p>The StackInfo API offers the following endpoints:</p>
+            <ul>
+                <li><code>/stacks</code>: Endpoint to query information about a particular stack.</li>
+                <li><code>/stacks/{stack_name}</code>: Endpoint to get detailed information about a specific stack.</li>
+            </ul>
+        </section>
+        <section>
+            <h1>Temporary Server</h1>
+            <p>The StackInfo API is temporarily hosted on AWS. You can access the API using the following base URL:</p>
+            <pre class="code-container"><code id="code2">https://www.stackinfo.eduardovaz.dev/stacks?tag={stack_name}</code><button class="copy-button" onclick="copyCode('code1')">Copy</button></pre>
+            <p>Requests can be made to the API using the provided base URL and the necessary parameters.</p>
+            <pre class="code-container"><code id="code3">curl -X GET "https://www.stackinfo.eduardovaz.dev/stacks?tag=angular" -H "accept: application/json"</code><button class="copy-button" onclick="copyCode('code1')">Copy</button></pre>
+        </section>
+        <section>
+            <h1>Contributing</h1>
+            <p>Contributions to the StackInfo API are welcome and encouraged. To contribute to the project, you can follow these steps:</p>
+            <ol>
+                <li>Fork the StackInfo repository to your GitHub account.</li>
+                <li>Create a new branch for your feature or bug fix.</li>
+                <li>Make your changes and commit them to your branch.</li>
+                <li>Push your changes to your fork.</li>
+                <li>Open a pull request to the main StackInfo repository.</li>
+                <li>Your pull request will be reviewed and merged if approved.</li>
+                <li>Congratulations! You have successfully contributed to the StackInfo API.</li>
+                <li>Don't forget to add your name to the list of contributors in the README file.</li>
+            </ol>
+        </section>
+        <section>
+            <h3>Contributors</h3>
+            <ul>
+                <li><a href="https://github.com/eduardocvaz">Eduardo Vaz</a></li>
+            </ul>
+        </section>
+        <section>
+            <h1>License</h1>
+            <p>The StackInfo API is licensed under the MIT License. For more information, see the LICENSE file in the project repository.</p>
+        </section>
+    </main>
+    <script>
+        function copyCode(id) {
+            var codeBlock = document.getElementById(id);
+            var codeContent = codeBlock.textContent || codeBlock.innerText;
+            copyToClipboard(codeContent);
+        }
+
+        function copyToClipboard(text) {
+            navigator.clipboard.writeText(text).then(function() {
+                alert('Code copied to clipboard!');
+            }, function(err) {
+                console.error('Failed to copy: ', err);
+            });
+        }
+    </script>
+</body>
+</html>
